@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f3ff;
+}
+
+.events {
+  margin: 80px auto;
+  padding: 70px 100px 80px;
+  max-width: 1240px;
+  width: calc(100% - 360px);
+  background: #fff;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+}
+
+@media screen and (max-width: 1600px) {
+     .events { width: 600px; }
+   }
+
+.events__title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 66px;
+  color: #2e282c;
+}
+
+.events__filter {
+  padding-top: 5px;
+}
+
+.filter {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1600px) {
+     .filter { width: 400px; }
+   }
+
+.filter__label {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2e282c;
+}
+
+.filter__select {
+  display: inline-block;
+  padding: 9px 15px 8px 22px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 50px;
+  border: 1px solid #444444;
+  box-sizing: border-box;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #2e282c;
+}
+
+.cards {
+  margin: 0;
+  margin-top: 45px;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+.cards__item {
+  margin-bottom: 40px;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.cards__date {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -10px;
+  left: 40px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 48px;
+  line-height: 66px;
+  color: #fff;
+  text-align: center;
+}
+
+.cards__title {
+  position: absolute;
+  left: 40px;
+  bottom: 0px;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 66px;
+  color: #fff;
+}
+
+.cards__item::after {
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: 5px;
+  background: url('./img/bookmark.svg') no-repeat;
+  height: 40px;
+  width: 50px;
+}
